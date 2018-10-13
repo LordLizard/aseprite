@@ -294,7 +294,7 @@ several minutes to finish:
     export PATH="${PWD}/depot_tools:${PATH}"
     cd skia
     python tools/git-sync-deps
-    gn gen out/Release --args="is_debug=false is_official_build=true skia_use_system_expat=false skia_use_system_icu=false skia_use_system_libjpeg_turbo=false skia_use_system_libpng=false skia_use_system_libwebp=false skia_use_system_zlib=false"
+    ./bin/gn gen out/Release --args="is_debug=false is_official_build=true skia_use_system_expat=false skia_use_system_icu=false skia_use_system_libjpeg_turbo=false skia_use_system_libpng=false skia_use_system_libwebp=false skia_use_system_zlib=false"
     ninja -C out/Release skia
 
 After this you should have all Skia libraries compiled.  When you
